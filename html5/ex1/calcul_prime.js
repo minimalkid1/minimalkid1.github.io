@@ -37,7 +37,7 @@ function calculeaza_prime (start_value)
 	}
 	if(start_value < 1e10)
 	{
-		SetTimeout(calculeaza_prime , 1, start_value);
+		setTimeout(calculeaza_prime , 1, start_value);
 	}
 	else
 	{
