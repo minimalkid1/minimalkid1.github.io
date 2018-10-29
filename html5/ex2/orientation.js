@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML="Business version: 2018.10.29.1";
+document.getElementById("id_business_version").innerHTML="Business version: 2018.10.29.2";
 window.addEventListener("deviceorientation",on_device_orientation);
 
 function on_device_orientation(e)
