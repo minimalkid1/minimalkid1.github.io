@@ -5,5 +5,5 @@ function on_device_orientation(e)
 {
 	document.getElementById("id_alpha").innerHTML = e.alpha;
 	document.getElementById("id_beta").innerHTML = e.beta;
-	document.getElementById("id_gama").innerHTML = e.gama;
+	document.getElementById("id_gama").innerHTML = e.gamma;
 }
