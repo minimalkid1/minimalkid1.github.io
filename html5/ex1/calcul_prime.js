@@ -23,7 +23,7 @@ function calculeaza_prime (start_value)
 	}
 	else
 	{
-		for(var i = start; i < start + 1000; i++)
+		for(var i = start_value; i < start_value + 1000; i++)
 		{
 			if(is_prim(i))
 				postMessage(i);
