@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML="Business version: 2018.11.05.2";
+document.getElementById("id_business_version").innerHTML="Business version: 2018.11.05.3";
 window.addEventListener("deviceorientation",on_device_orientation);
 window.addEventListener("devicemotion",on_device_motion);
 
@@ -29,6 +29,6 @@ function on_device_motion(e)
 	document.getElementById("id_acc_x").innerHTML = Math.round(acc_x * 100) / 100;
 	document.getElementById("id_acc_y").innerHTML = Math.round(acc_y * 100) / 100;
 	
-	document.getElementById("id_rot_x").innerHTML = Math.round(Math.atan(acc_x / acc_z) * 100) / 100;
-	document.getElementById("id_rot_y").innerHTML = Math.round(Math.atan(acc_y / acc_z) * 100) / 100;
+	document.getElementById("id_rot_x").innerHTML = Math.round(Math.atan(acc_x / acc_z) * 180 / Math.PI * 100) / 100;
+	document.getElementById("id_rot_y").innerHTML = Math.round(Math.atan(acc_y / acc_z) * 180 / Math.PI * 100) / 100;
 }
