@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML="Business version: 2018.11.12.1";
+document.getElementById("id_business_version").innerHTML="Business version: 2018.11.12.2";
 document.getElementById("id_button").addEventListener("click" , start);
 document.getElementById("id_video").addEventListener("touchstart",on_touch);
 document.getElementById("id_video").addEventListener("mousedown",on_touch);
