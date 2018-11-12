@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML="Business version: 2018.11.12.2";
+document.getElementById("id_business_version").innerHTML="Business version: 2018.11.12.3";
 document.getElementById("id_button").addEventListener("click" , start);
 document.getElementById("id_video").addEventListener("touchstart",on_touch);
 document.getElementById("id_video").addEventListener("mousedown",on_touch);
@@ -23,7 +23,7 @@ function start()
 function on_touch(e)
 {
 	var canvas = document.getElementById("id_canvas");
-	var context = camvas.getContext("2d");
+	var context = canvas.getContext("2d");
 	var video = document.getElementById("id_video");
 	
 	context.drawImage(video , 0 , 0);
