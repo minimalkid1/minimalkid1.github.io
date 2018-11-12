@@ -15,5 +15,5 @@ function start()
 {
 	var c = (audio: true , video: true);
 	
-	navigator.mediaDevices.getUserMedia().then(on_success).catch(on_failure);
+	navigator.mediaDevices.getUserMedia(c).then(on_success).catch(on_failure);
 }
