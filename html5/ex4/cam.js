@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML="Business version: 2018.11.12.0";
+document.getElementById("id_business_version").innerHTML="Business version: 2018.11.12.1";
 document.getElementById("id_button").addEventListener("click" , start);
 
 function on_success(e)
@@ -8,7 +8,7 @@ function on_success(e)
 
 function on_failure(e)
 {
-	alert("Eroare conectare")
+	alert("Eroare conectare");
 }
 
 function start()
