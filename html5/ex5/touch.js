@@ -5,7 +5,7 @@ canvas.addEventListener("touchstart", on_touch_start);
 
 function on_touch_start(e)
 {
-	for(var i=0; i < e.changedTouches.lenght; i++)
+	for(var i=0; i < e.changedTouches.length; i++)
 	{
 	var context = canvas.getContext("2d");
 	context.beginPath();
