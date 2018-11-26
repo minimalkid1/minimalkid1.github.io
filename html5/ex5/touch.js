@@ -6,7 +6,7 @@ canvas.addEventListener("touchmove", on_touch_move);
 
 var canvas_bounding_rect = canvas.getBoundingClientRect();
 
-var last_pos = (x: 0, y: 0);
+var last_pos = {x: 0, y: 0};
 
 function on_touch_start(e)
 {
