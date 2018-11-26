@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML="Business version: 2018.11.26.6";
+document.getElementById("id_business_version").innerHTML="Business version: 2018.11.26.7";
 
 var canvas = document.getElementById("id_canvas");
 canvas.addEventListener("touchstart", on_touch_start);
