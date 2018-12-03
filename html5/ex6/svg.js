@@ -8,7 +8,9 @@ function on_device_orientation(e)
 	var circle = document.getElementById ("id_circle");
 	
 	var R = 20;
+	svg_width = svg.getAttribute("width");
+	svg_height = svg.getAttribute("height");
 	
-	circle.setAttribute('cx', '(svg.width / 2 + e.gamma / 90 * (svg.width / 2 - R)');
-	circle.setAttribute('cx', '(svg.height / 2 + e.beta / 90 * (svg.height / 2 - R)');
+	circle.setAttribute('cx', (svg_width / 2 + e.gamma / 90 * (svg_width / 2 - R));
+	circle.setAttribute('cx', (svg_height / 2 + e.beta / 90 * (svg_height / 2 - R));
 }
