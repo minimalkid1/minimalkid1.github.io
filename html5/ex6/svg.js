@@ -10,6 +10,6 @@ function on_device_orientation(e)
 	
 	var R = 20;
 	
-	circle.setAttribute("cx", svg.width / 2 + e.gamma / 90 * (svg.width / 2 - R));
-	circle.setAttribute("cx", svg.height / 2 + e.beta / 90 * (svg.height / 2 - R));
+	circle.setAttribute("cx", svg.width / 2 + e.gamma / 90 * (svg.width / 2 - R) + "px");
+	circle.setAttribute("cx", svg.height / 2 + e.beta / 90 * (svg.height / 2 - R) + "px");
 }
