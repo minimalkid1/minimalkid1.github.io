@@ -3,6 +3,7 @@ document.getElementById("id_business_version").innerHTML="Business version: 2018
 var canvas = document.getElementById("id_canvas");
 canvas.addEventListener("touchstart", on_touch_start);
 canvas.addEventListener("touchmove", on_touch_move);
+canvas.addEventListener("touchmove", on_touch_end);
 
 var canvas_bounding_rect = canvas.getBoundingClientRect();
 
@@ -53,4 +54,9 @@ function on_touch_move(e)
 	pozitii(j).y = e.changedTouches.item(i).pageY;
 	
 	}
+}
+
+function on_touch_end(e)
+{
+	
 }
