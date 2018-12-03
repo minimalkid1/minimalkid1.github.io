@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML="Business version: 2018.12.03.6";
+document.getElementById("id_business_version").innerHTML="Business version: 2018.12.03.7";
 window.addEventListener("deviceorientation",on_device_orientation);
 
 function on_device_orientation(e)
@@ -12,5 +12,5 @@ function on_device_orientation(e)
 	svg_height = svg.getAttribute("height");
 	
 	circle.setAttribute('cx', svg_width / 2 + e.gamma / 90 * (svg_width / 2 - R) + "px");
-	circle.setAttribute('cx', svg_height / 2 + e.beta / 90 * (svg_height / 2 - R) + "px");
+	circle.setAttribute('cy', svg_height / 2 + e.beta / 90 * (svg_height / 2 - R) + "px");
 }
