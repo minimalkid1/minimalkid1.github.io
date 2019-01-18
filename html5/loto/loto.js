@@ -2,17 +2,17 @@ document.getElementById("id_business_version").innerHTML="Business version: 2019
 document.getElementById("id_start_button").addEventListener("click", start);
 document.getElementById("id_stop_button").addEventListener("click", stop);
 
-var w;
+var w1;
 
 function start()
 {
 	if(typeof(Worker) !== "undefined")
 	{
-		if(typeof(w) == "undefined")
+		if(typeof(w1) == "undefined")
 		{
-			w = new Worker("primul_numar.js");
+			w1 = new Worker("primul_numar.js");
 		}
-		w.onmessage = function(e)
+		w1.onmessage = function(e)
 		{
 			document.getElementById("1Numar").innerHTML = e.data;
 		};
@@ -21,6 +21,6 @@ function start()
 
 function stop()
 {
-	w.terminate();
-	w = undefined;
+	w1.terminate();
+	w1 = undefined;
 }
