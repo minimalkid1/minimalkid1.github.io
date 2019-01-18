@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML="Business version: 2019.01.18.5";
+document.getElementById("id_business_version").innerHTML="Business version: 2019.01.18.6";
 document.getElementById("id_start_button").addEventListener("click", start);
 
 var w1;
@@ -65,8 +65,7 @@ function start()
 		{
 			document.getElementById("6Numar").innerHTML = e.data;
 		};
-	}
-	
+	}	
 	stop();
 }
 
