@@ -65,9 +65,9 @@ function start()
 		{
 			document.getElementById("6Numar").innerHTML = e.data;
 		};
-		
-		stop();
 	}
+	
+	stop();
 }
 
 function stop()
