@@ -12,7 +12,7 @@ function start()
 		{
 			w = new Worker("primul_numar.js");
 		}
-		w1.onmessage = function(e)
+		w.onmessage = function(e)
 		{
 			document.getElementById("1Numar").innerHTML = e.data;
 		};
