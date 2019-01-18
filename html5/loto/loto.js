@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML="Business version: 2019.01.18.10";
+document.getElementById("id_business_version").innerHTML="Business version: 2019.01.18.11";
 document.getElementById("id_start_button").addEventListener("click", start);
 document.getElementById("id_stop_button").addEventListener("click", stop);
 
@@ -8,11 +8,6 @@ var w3;
 var w4;
 var w5;
 var w6;
-
-function sleep(delay) {
-    var start = new Date().getTime();
-    while (new Date().getTime() < start + delay);
-}
 
 function start()
 {
@@ -71,10 +66,7 @@ function start()
 		{
 			document.getElementById("6Numar").innerHTML = e.data;
 		};
-	}
-
-	sleep(3000);
-	stop();	
+	}	
 }
 
 function stop()
